@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista y formulario</title>
+    <link rel="stylesheet" href="../CSS/Contacto.css">
+</head>
+<body style="background-color: rgb(132, 243, 243);">
+<header>
+        <IMg src="../IMG/incap.png" width="100" height="100" alt="incap"></IMg>
+        <h1>FORMULARIO Y LISTAS EN HTML</h1>
+</header>
+    <nav>
+        <ul>
+            <li type="disc" style="color: rgb(0, 110, 255);">HOME</li>
+            <li type="square">PRODUCTOS</li>
+            <li type="circle">SERVICIOS</li>
+            <li>CONTACTO</li>
+        </ul>
+    </nav>
+    <section>
+        <form action="datos.php" method="post">
+            <fieldset>
+                <!-- seccion de ingreso de nombre-->
+                <label for="">Nombre completo:</label>
+                <input name="Nombre"type="text" placeholder="&#9786; ingrese su nombre" required="">
+                <br><br>
+
+                <!--seccion de email-->
+                <label>E-MAIL:</label>
+                <input name="email"type="email" placeholder="&#9874;Ingrse su Email" required="">
+                <br><br>
+
+                <!--seccion de  ingreso de contraseña-->
+                <label>contraseña</label>
+                <input name="contraseña"type="password" placeholder="&#9745;Ingrese su contraseña" required="">
+                <br><br>
+                <hr>
+
+                <!--seccion de Hobbies-->
+                <label>Selecciona tus hobbies:</label>
+                <br>
+                <input name="cine" type="checkbox">Cine<br>
+                <input name="lectura" type="checkbox">Lectura<br>
+                <input name="deporte" type="checkbox">Deporte<br>
+                <br>
+                <br>
+                <!--Seccion Estado civil-->
+                <label>Estado civil</label><br>
+                <input name="estcivil" type="radio" value="casado">Casado(a)<br>
+                <input name="estcivil" type="radio" value="soltero">Soltero(a)<br>
+                <input name="estcivil" type="radio" value="viudo">Viudo(a)<br>
+                <br>
+                <br><br>
+                <!--selecionar opcion lista-->
+                <label for="">PROGRAMAS TECNICOS</label>
+                <select name="select"></select>
+                <option>diseño grafico</option>
+                <option>sistemas</option>
+                <option>Contabilidad</option>
+                </select>
+                <br><br>
+                <!-- seccion de comentarios -->
+                <label for="">Tu comentario:</label><br>
+                <textarea name="Mensaje" rows="5" cols="40"></textarea>
+                </fieldset>
+                <br><br>
+                <!--seccion de botones formulario -->
+                <button type="submit">ENVIAR</button>
+                <button type="reset">CANCELAR</button>
+                <br><br>
+                </form>
+    </section>
+                <!--seccion footer  pie de pagina-->
+    <footer>
+        Derechos reservados &copy;2023&#64; @KEVIN
+    </footer>
+</body>
+</html>
